@@ -28,7 +28,6 @@ function formatLabel(key) {
   return key.charAt(0).toUpperCase() + key.slice(1).replace(/([A-Z])/g, ' $1');
 }
 
-// sdf
 function createDisplay(contentfragment) {
   const { keys } = contentfragment; // String version of keys in adventureByPath query
   const { data } = contentfragment;
