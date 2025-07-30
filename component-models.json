@@ -150,7 +150,7 @@
     ]
   },
   {
-    "id": "adventure-content-fragment",
+    "id": "adventure-cf",
     "fields": [
       {
         "component": "aem-content-fragment",
