@@ -47,8 +47,8 @@ function createDisplay(contentfragment) {
     <div class="content-fragment-detail"
         data-aue-resource="urn:aemconnection:${cfPath}/jcr:content/data/master" 
         data-aue-type="reference" 
-        data-aue-label="${data[keys.title]}">
-        data-aue-filter=""`;
+        data-aue-label="${data[keys.title]}"
+        data-aue-filter="">`;
   // eslint-disable-next-line no-underscore-dangle
   const cfPrimaryImagePath = data[keys.primaryImage]._path;
   // Any element that contains a CF data property that
