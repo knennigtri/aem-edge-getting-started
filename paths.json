@@ -4,7 +4,7 @@
     "/content/aem-wknd-eds-ue/configuration:/.helix/config.json",
     "/content/aem-wknd-eds-ue/metadata:/metadata.json",
     "/content/aem-wknd-eds-ue/redirects:/redirects.json",
-    "/content/aem-wknd-eds-ue/query-index:/query-index.json"
+    "/content/aem-wknd-eds-ue.resource/query-index:/query-index.json"
   ],
   "includes": [
     "/content/aem-wknd-eds-ue/"
