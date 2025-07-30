@@ -48,7 +48,7 @@
                     "label": "CTA",
                     "valueType": "string",
                     "validation": {
-                      "rootPath": "/content/aem-wknd-eds-ue"
+                      "rootPath": "/content/wknd-xwalk"
                     }
                 },
                 {
