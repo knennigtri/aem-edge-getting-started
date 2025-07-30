@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://main--aem-edge-getting-started--knennigtri.aem.live/sitemap.xml
