@@ -80,12 +80,7 @@ function createDisplay(contentfragment) {
     }
   });
   innerHTML
-        += `
-        <div class="content-fragment-detail-item">
-                        <span class="detail-label">${formatLabel('adventureType')}</span>
-                        <span class="detail-value" data-aue-type="enum" data-aue-prop="${'adventureType'}">${data.adventureType}</span>
-                    </div>
-        </div>
+        += `</div>
             <div class="content-fragment-${keys.description}">
                   <h2>About This Adventure</h2>
                   <div class="content-fragment-${keys.description}-content" data-aue-type="richtext" data-aue-prop="${keys.description}">

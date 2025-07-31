@@ -80,17 +80,7 @@ function createDisplay(contentfragment) {
     }
   });
   innerHTML
-        += `
-        <div class="content-fragment-detail-item">
-                        <span class="detail-label">THIS IS NEW PRICE</span>
-                        <span class="detail-value" data-aue-type="number" data-aue-prop="${'price'}">${data.price}</span>
-                    </div>
-        </div>
-        <div class="content-fragment-detail-item">
-                        <span class="detail-label">THIS IS NEW</span>
-                        <span class="detail-value" data-aue-type="enum" data-aue-prop="${'adventureType'}">${data.adventureType}</span>
-                    </div>
-        </div>
+        += `</div>
             <div class="content-fragment-${keys.description}">
                   <h2>About This Adventure</h2>
                   <div class="content-fragment-${keys.description}-content" data-aue-type="richtext" data-aue-prop="${keys.description}">
