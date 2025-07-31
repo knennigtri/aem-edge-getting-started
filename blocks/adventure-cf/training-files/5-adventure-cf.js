@@ -50,22 +50,16 @@ function createDisplay(contentfragment) {
         data-aue-label="${data[keys.title]}">`;
   // eslint-disable-next-line no-underscore-dangle
   const cfPrimaryImagePath = data[keys.primaryImage]._path;
-  // Any element that contains a CF data property that
-  //    should be editable in the Universal Editor needs to have:
-  // data-aue-type
-  //    Tells the Universal Editor what type of form field the data is
-  // data-aue-prop
-  //    Tells the Universal Editor what property to save back to the content fragment
   innerHTML
         += `<div class="content-fragment-hero">
             <div class="content-fragment-image">
                 <picture>
                     <source srcset="${getAEMHost()}${cfPrimaryImagePath}?width=1200&format=webply&optimize=medium" type="image/webp">
-                    <img src="${getAEMHost()}${cfPrimaryImagePath}?width=1200&format=webply&optimize=medium" alt="${data[keys.title]}" loading="lazy" data-aue-type="media" data-aue-prop="${keys.primaryImage}">
+                    <img src="${getAEMHost()}${cfPrimaryImagePath}?width=1200&format=webply&optimize=medium" alt="${data[keys.title]}" loading="lazy">
                 </picture>
             </div>
             <div class="content-fragment-${keys.title}-overlay">
-                <h1 class="content-fragment-${keys.title}" data-aue-type="text" data-aue-prop="${keys.title} ">${data[keys.title]}</h1>
+                <h1 class="content-fragment-${keys.title}">${data[keys.title]}</h1>
             </div>
         </div>
         <div class="content-fragment-content">
@@ -75,7 +69,7 @@ function createDisplay(contentfragment) {
     if (data[detail]) {
       innerHTML += `<div class="content-fragment-detail-item">
                         <span class="detail-label">${formatLabel(detail)}</span>
-                        <span class="detail-value" data-aue-type="text" data-aue-prop="${detail}">${data[detail]}</span>
+                        <span class="detail-value">${data[detail]}</span>
                     </div>`;
     }
   });
@@ -83,13 +77,13 @@ function createDisplay(contentfragment) {
         += `</div>
             <div class="content-fragment-${keys.description}">
                   <h2>About This Adventure</h2>
-                  <div class="content-fragment-${keys.description}-content" data-aue-type="richtext" data-aue-prop="${keys.description}">
+                  <div class="content-fragment-${keys.description}-content">
                       ${data[keys.description].html || data[keys.description].plaintext}
                   </div>
               </div>
               <div class="content-fragment-${keys.itinerary}">
                   <h2>Itinerary</h2>
-                  <div class="content-fragment-${keys.itinerary}-content" data-aue-type="richtext" data-aue-prop="${keys.itinerary}">
+                  <div class="content-fragment-${keys.itinerary}-content">
                       ${data[keys.itinerary].html || data[keys.itinerary].plaintext}
                   </div>
               </div>
